@@ -10,7 +10,9 @@ function Login() {
         <div className='phno'>
             <input className='ccode' type="text" placeholder='+91'></input>
             <hr/>
-            <input className='phone' type="text" placeholder='Phone Number'></input>
+            <input className='phone' type="text" placeholder='Phone Number' onInput={(e) => {
+              e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
+            }}></input>
         </div>
         <button className='login_btn'>SUBMIT</button>
         <div className='orbtw'>
