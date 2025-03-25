@@ -1,5 +1,6 @@
 .login{
     width: 40%;
+    height: 100%;
     display: flex;
     margin: 0;
     margin-left: 60%;
@@ -14,9 +15,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    height: 100%;
     background-color: #FFDE59;
+    box-sizing: border-box;
 }
 .login_container{
     height: 80%;
@@ -36,7 +36,7 @@ h2{
     font-weight: bold;
     background-color:#D9DFE1 ;
     font-size: 25px;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 vl{
     width: 90%;
@@ -45,7 +45,7 @@ vl{
     border-radius: 5px;
     margin-top: 17px;
 }
-.phno{
+.phno, .password{
     width: 80%;
     height: 45px;
     border-radius: 15px;
@@ -56,26 +56,11 @@ vl{
     background-color: #fff;
     box-shadow: #b7babb 0px 4px 4px 0px;
 }
-.ccode{
-    width: 10%;
-    height: 40px;
-    border: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #fff;
-    border-radius: 30px;
-    padding-left: 10px;
+.password{
+    margin-top: 20px;
+}
 
-}
-.ccode:focus{
-    outline: none;
-}
-.ccode::placeholder{
-    font-weight: bold;
-    font-size: 15px;
-}
-.phone{
+.phone, .pass{
     width: 80%;
     height: 40px;
     border: none;
@@ -87,26 +72,34 @@ vl{
     border-radius: 30px;
 
 }
-.phone:focus{
+.phone:focus, .pass:focus{
     outline: none;
 }
-.phone::placeholder{
+.phone::placeholder, .pass::placeholder{
     font-weight: bold;
     font-size: 15px;
 }
-hr{
-    width: 2px;
-    background-color: darkgray;
-    height: 80%;
-    border-radius: 5px;
-    margin-left: 10px;
+.reg_and_forgot{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 20px;
+    background-color: #D9DFE1;
+}
+.reg_and_forgot a{
+    text-decoration: none;
+    color: #FF3131;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #D9DFE1;
 }
 .login_btn{
     width: 35%;
     height: 40px;
     border-radius: 30px;
     border: none;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: #FF3131;
     color: white;
     font-weight: bold;
@@ -126,7 +119,7 @@ hr{
     display: flex;
     background-color: #d9dfe1;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .dots{
     flex-grow: 1;
@@ -178,36 +171,5 @@ hr{
     font-weight: bold;
     background-color: #ffffff;
 }
-.microsoft_btn{
-    width: 80%;
-    padding: 12px;
-    margin-top: 30px;
-    height: 45px;
-    border-radius: 30px;
-    border: none;
-    background-color: #fff;
-    color: #000;
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: #b7babb 0px 4px 4px 0px;
-}
-.microsoft_btn:hover{
-    cursor: pointer;
-    box-shadow: #998c8c 0px 3px 3px 0px;
-}
-.microsoft_logo{
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-}
-.microsoft_btn span{
-    flex-grow: 1;
-    text-align: center;
-    font-size: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    background-color: #ffffff;
-}
+
 

@@ -8,12 +8,16 @@ function Login() {
         </h2>
         <vl/>
         <div className='phno'>
-            <input className='ccode' type="text" placeholder='+91'></input>
-            <hr/>
-            <input className='phone' type="text" placeholder='Phone Number' onInput={(e) => {
-              e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
-            }}></input>
+            <input className='phone' type="text" placeholder='Enter your Email / Username' ></input>
         </div>
+        <div className='password'>
+            <input className='pass' type="password" placeholder='Enter your Password' ></input>
+        </div>
+        <div className='reg_and_forgot'>
+            <a href='#' className='register'>Register</a>
+            <a href='#' className='forgot'>Forgot Password?</a>
+        </div>
+
         <button className='login_btn'>SUBMIT</button>
         <div className='orbtw'>
             <h4 className='dots'></h4>
@@ -24,10 +28,7 @@ function Login() {
             <img src='https://img.icons8.com/color/48/000000/google-logo.png' alt='Google Login' className='google_logo'/>
             <span>Login with google account</span>
         </button>
-        <button className='microsoft_btn'>
-            <img src='https://img.icons8.com/color/48/000000/microsoft.png' alt='Microsoft Login' className='microsoft_logo'/>
-            <span>Login with microsoft account</span>
-        </button>
+        
       </div>
     </div>
   );
