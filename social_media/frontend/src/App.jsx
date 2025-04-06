@@ -7,12 +7,11 @@ import ProfilePage from './pages/profile.jsx';
 
 function App() {
   return (
-    /*<Routes>
+    <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Reg />} />
       <Route path="/home" element={<Home />} />
-    </Routes>*/
-    <ProfilePage/>
+    </Routes>
   );
 }
 
