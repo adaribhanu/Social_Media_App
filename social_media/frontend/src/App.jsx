@@ -1,14 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
-import Login from './Login.jsx';
-import Reg from './Reg.jsx';
-import Home from './home.jsx'
+import Login from './pages/login.jsx';
+import Reg from './pages/reg.jsx';
+import Home from './pages/home.jsx'
+import SetupProfile from './pages/userSetup.jsx';
+import ProfilePage from './pages/profile.jsx';
 
 function App() {
   return (
-    <Routes>
+    /*<Routes>
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Reg />} />
-    </Routes>
+      <Route path="/home" element={<Home />} />
+    </Routes>*/
+    <ProfilePage/>
   );
 }
 
